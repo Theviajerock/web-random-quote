@@ -1,33 +1,57 @@
 <html>
     <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Random Quotes </title>
 		<!-- CSS -->
-        <!-- Latest compiled and minified CSS -->
+		<!-- Font -->
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		
-		<!--JAVASCRIPT-->
-		<!--BOOSTRAP-->
 		
-		<!-- Jquery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
-		<script src="js/random.js"></script>
+		<style>
+		h1{
+		font-family: 'Indie Flower', cursive;
+		}
+		
+		.addhere {
+		font-family: 'Indie Flower', cursive;	
+		font-weight: bold;
+		font-size: 1.1em;
+		}
+		#boton {
+		font-family: 'Indie Flower', cursive;
+		
+		}
+		
+		</style>
 		
     </head>
     <body>
         <div class="container">
 			<div class="col-md-12">
-				<div class="jumbotron addhere">
+				<div class="jumbotron">
+				<h1> Random Quote Machine </h1>
+				<div class="addhere">
 				</div>
 				
 				<div class="col-md-12">
-					<button id="boton" type="button" class="btn btn-default"> push </button>
+					<button id="boton" type="button" class="btn btn-info"> New Quote! </button>
 				</div>
 			</div>
 		</div>
+		<!--JAVASCRIPT-->
+		<!--BOOSTRAP-->
+		
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+		<script src="js/random.js" ></script>
     </body>
 </html>
