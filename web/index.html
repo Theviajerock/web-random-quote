@@ -43,6 +43,9 @@
 				<div class="col-md-12">
 					<button id="boton" type="button" class="btn btn-info"> New Quote! </button>
 				</div>
+				<div class="col-md-12">
+                                     <a id="link1" href="http://twitter.com/share" class="twitter-share-button" data-text="I played Flying hawks and i scored : " data-count="vertical" data-via="games_html5">Tweet it!</a>
+				</div>
 			</div>
 		</div>
 		<!--JAVASCRIPT-->
@@ -53,5 +56,10 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
 		<script src="js/random.js" ></script>
+		<script type="text/javascript">
+    var maxscore = 1000;
+    var elem = document.getElementById("link1");
+    elem.setAttribute("data-text", elem.getAttribute("data-text") + maxscore);
+  </script>
     </body>
 </html>
