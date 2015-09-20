@@ -12,12 +12,22 @@ $(document).ready(function(){
 	
 	phrases = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10];
 	num2 = Math.floor(Math.random() * 10);
+
+        $('#twb iframe').remove();
 	
+	var tweetBtn = $('<a></a>')
+            .addClass('twitter-share-button')
+            .attr('href', 'http://twitter.com/share')
+            .attr('data-url', 'http://theviajerock.tk')
+            .attr('data-text', phrases[num2]);
+            $('#twb').append(tweetBtn);
+            twttr.widgets.load();
+
 	
 	$( ".addhere" ).append( "<p>", document.createTextNode(phrases[num2]), "</p>" );
 	$("#boton").click(function(ev){
 		ev.preventDefault();
-		$('#tweetBtn iframe').remove();
+		$('#twb iframe').remove();
 
 		$(".addhere").empty();
 		num = Math.floor(Math.random() * 10);
