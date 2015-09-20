@@ -19,6 +19,6 @@ $(document).ready(function(){
 		$(".addhere").empty();
 		num = Math.floor(Math.random() * 10);
 		console.log(phrases[num]);
-		$(".addhere").append("<p>", document.createTextNode( phrases[num] ), "</p>");
+		$(".addhere").append("<p>", document.createTextNode( phrases[num] ), "</p>").hide().fadeIn(1000);;
 	});
 });
