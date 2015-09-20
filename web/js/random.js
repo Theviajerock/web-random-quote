@@ -15,11 +15,25 @@ $(document).ready(function(){
 	
 	
 	$( ".addhere" ).append( "<p>", document.createTextNode(phrases[num2]), "</p>" );
-	$("#boton").click(function(){
+	$("#boton").click(function(ev){
+		ev.preventDefault();
+		$('#tweetBtn iframe').remove();
+
 		$(".addhere").empty();
 		num = Math.floor(Math.random() * 10);
 		console.log(phrases[num]);
 		$(".addhere").append("<p>", document.createTextNode( phrases[num] ), "</p>").hide().fadeIn(1000);;
+		
+		// Generate new markup
+            var tweetBtn = $('<a></a>')
+            .addClass('twitter-share-button')
+            .attr('href', 'http://twitter.com/share')
+            .attr('data-url', 'http://test.com')
+            .attr('data-text', phrases[num]);
+	    $('#tweetBtn').append(tweetBtn);
+	    twttr.widgets.load();
+
+		
 	});
 
 });
