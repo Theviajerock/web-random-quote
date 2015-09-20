@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 	p1 = '“Be yourself; everyone else is already taken.” \n ― Oscar Wilde'
 	p2 = '“You know you\'re in love when you can\'t fall asleep because reality is finally better than your dreams.” \n ― Dr. Seuss'
 	p3 = '“A room without books is like a body without a soul.” \n ― Marcus Tullius Cicero'
@@ -13,18 +15,10 @@ $(document).ready(function(){
 	phrases = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10];
 	num2 = Math.floor(Math.random() * 10);
 
-        $('#twb iframe').remove();
-	
-	var tweetBtn = $('<a></a>')
-            .addClass('twitter-share-button')
-            .attr('href', 'http://twitter.com/share')
-            .attr('data-url', 'http://theviajerock.tk')
-            .attr('data-text', phrases[num2]);
-            $('#twb').append(tweetBtn);
-            twttr.widgets.load();
-
 	
 	$( ".addhere" ).append( "<p>", document.createTextNode(phrases[num2]), "</p>" );
+
+
 	$("#boton").click(function(ev){
 		ev.preventDefault();
 		$('#twb iframe').remove();
@@ -47,3 +41,7 @@ $(document).ready(function(){
 	});
 
 });
+
+
+
+
