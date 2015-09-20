@@ -28,9 +28,9 @@ $(document).ready(function(){
             var tweetBtn = $('<a></a>')
             .addClass('twitter-share-button')
             .attr('href', 'http://twitter.com/share')
-            .attr('data-url', 'http://test.com')
+            .attr('data-url', 'http://theviajerock.tk')
             .attr('data-text', phrases[num]);
-	    $('#tweetBtn').append(tweetBtn);
+	    $('#twb').append(tweetBtn);
 	    twttr.widgets.load();
 
 		
